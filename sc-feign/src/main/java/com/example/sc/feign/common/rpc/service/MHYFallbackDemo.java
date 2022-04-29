@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MHYFallbackDemo implements MHYFeignServiceDemo {
     @Override
-    public String hiMhy() {
+    public String hiMhy(int flag) {
         return "mhy! 这里是Fallback。";
     }
 }
